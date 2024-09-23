@@ -19,7 +19,7 @@ namespace OtonoMovieTask.Api
             {
                 options.AddDefaultPolicy(builder =>
                 {
-                    builder.WithOrigins("http://localhost:5275")
+                    builder.WithOrigins("https://otono-movieapp-task-fe.vercel.app")
                            .AllowAnyHeader()
                            .AllowAnyMethod()
                            .WithExposedHeaders("Authorization"); // This adds the custom authorization header to response
